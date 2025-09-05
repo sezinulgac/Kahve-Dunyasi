@@ -10,8 +10,10 @@ const routes: RouteRecordRaw[] = [
       { path: 'comp2', component: () => import('components/TheGiris.vue') },
       { path: 'comp3', component: () => import('components/TheMenu.vue') },
       { path: 'comp4', component: () => import('components/TheComp4.vue') },
-      { path: 'comp5', component: () => import('components/TheComp5.vue') }
-      
+      { path: 'comp5', component: () => import('components/TheComp5.vue') },
+      { path: 'comp6', component: () => import('components/SignUp.vue') }
+
+
     ],
   },
 

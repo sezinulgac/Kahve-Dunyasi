@@ -49,6 +49,13 @@ const componentLinks: ComponentLinkProps[] = [
     link: '/comp1',
   },
   {
+    title: 'Kayıt Ol',
+    caption: 'Kahve Dünyası',
+    icon: 'code',
+    link: '/comp6',
+  },
+
+  {
     title: 'Giriş',
     caption: 'Kahve Dünyası',
     icon: 'code',
@@ -72,7 +79,7 @@ const componentLinks: ComponentLinkProps[] = [
     icon: 'rss_feed',
     link: '/comp5',
   },
- 
+
 ];
 
 const leftDrawerOpen = ref(false);

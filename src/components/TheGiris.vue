@@ -134,6 +134,9 @@
 </template>
 
 <script>
+import { auth } from '../firebase';
+import { signInWithEmailAndPassword } from 'firebase/auth';
+
 export default {
   data() {
     return {
@@ -160,6 +163,18 @@ export default {
           });
       });
     },
+    async login() {
+  try {
+    const userCredential = await signInWithEmailAndPassword(auth, this.email, this.password);
+    console.log('Giriş başarılı:', userCredential.user);
+    alert('Giriş başarılı! Hoş geldiniz 😊');
+    this.$router.push('/');
+  } catch (error) {
+    console.error('Giriş hatası:', error.message);
+    alert('E-posta veya şifre hatalı!');
+  }
+}
+
   },
 };
 </script>
